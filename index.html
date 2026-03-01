@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Music Downloader</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
+    <link rel="stylesheet" href="css/181aesJINczG.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/luWCj8l1FOCl.css">
+</head>
+<body>
+    <div class="background-glass">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    <div class="glass-overlay"></div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fab fa-spotify"></i>
+                <h1>Spotify <span>Downloader</span></h1>
+            </div>
+            <p class="tagline">Download your favorite Spotify tracks in MP3 format</p>
+        </header>
+
+        <main>
+            <div class="search-box">
+                <div class="input-wrapper">
+                    <i class="fas fa-link"></i>
+                    <input type="text" id="spotifyUrl" placeholder="Paste Spotify track URL here...">
+                    <button id="clearBtn" class="clear-btn" title="Clear">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <button id="downloadBtn" class="download-btn">
+                    <i class="fas fa-search"></i>
+                    <span>Search Track</span>
+                </button>
+            </div>
+
+            <div id="loader" class="loader hidden">
+                <div class="skeleton-card">
+                    <div class="skeleton-image pulse"></div>
+                    <div class="skeleton-info">
+                        <div class="skeleton-line pulse" style="width: 80%; height: 24px; margin-bottom: 12px;"></div>
+                        <div class="skeleton-line pulse" style="width: 60%; height: 16px; margin-bottom: 24px;"></div>
+                        <div class="skeleton-meta">
+                            <div class="skeleton-line pulse" style="width: 60px; height: 30px; border-radius: 50px;"></div>
+                            <div class="skeleton-line pulse" style="width: 80px; height: 30px; border-radius: 50px;"></div>
+                            <div class="skeleton-line pulse" style="width: 70px; height: 30px; border-radius: 50px;"></div>
+                        </div>
+                        <div class="skeleton-line pulse" style="width: 100%; height: 50px; border-radius: 50px; margin-top: 10px;"></div>
+                    </div>
+                </div>
+                <p class="loader-text">Finding your music...</p>
+            </div>
+
+            <div id="error" class="error-message hidden">
+                <i class="fas fa-exclamation-circle"></i>
+                <p id="errorText">Something went wrong. Please try again.</p>
+            </div>
+
+            <div id="result" class="result-card hidden">
+                <div class="track-image">
+                    <img id="thumbnail" src="" alt="Album Cover" loading="lazy">
+                </div>
+                <div class="track-info">
+                    <div class="track-details">
+                        <h2 id="trackTitle">Song Title</h2>
+                        <p id="artistName" class="artist"><i class="fas fa-user"></i> <span>Artist Name</span></p>
+                        <div class="track-meta">
+                            <span id="duration"><i class="far fa-clock"></i> 0:00</span>
+                            <div class="dot"></div>
+                            <span id="quality"><i class="fas fa-signal"></i> 320kbps</span>
+                            <div class="dot"></div>
+                            <span id="format"><i class="fas fa-compact-disc"></i> MP3</span>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <a id="downloadLink" href="#" class="download-track-btn" download="">
+                            <i class="fas fa-cloud-download-alt"></i>
+                            <span>Download MP3</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="credit">Made with <i class="fas fa-heart" style="color: #ff4d4d;"></i> by <a href="https://t.me/LazyProvider" target="_blank" class="author-link">@LazyProvider</a></p>
+            <p class="disclaimer">This tool is for personal use only</p>
+        </footer>
+    </div>
+
+    <script src="js/KZgOFwRpRmUS.js"></script>
+
+
+</body></html>
