@@ -20,7 +20,7 @@ A simple and modern Spotify Music Downloader with a clean glassmorphism interfac
 1. Clone the repository.
 
 ```bash
-git clone https://github.com/providerbotz/spotify-downloader.git
+git clone https://github.com/providerbotz/SpotifyDownload.git
 ```
 
 2. Open `index.html` in your browser.
